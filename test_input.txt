@@ -1,0 +1,10 @@
+ls
+pwd
+cd /tmp
+pwd
+echo "Hello World" > hello.txt
+cat file_name.txt
+ls > file_name.txt
+ls | sort
+ls *.txt
+exit

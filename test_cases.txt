@@ -1,0 +1,43 @@
+##Testing Interactive Mode:
+
+Test 1 - Basic Command Execution
+Input: ls
+Expected Output: Listing of current directory contents.
+
+Test 2 - Built-in Command: cd
+Input: cd /path/to/directory
+Expected Output: Shell changes current directory to specified path.
+
+Test 3 - Built-in Command: pwd
+Input: pwd
+Expected Output: Prints path to current working directory.
+
+Test 4 - Input Redirection
+Input: cat file_name.txt
+Expected Output: Contents of file.
+
+Test 5 - Output Redirection
+Input: ls > file_name.txt
+Expected Output: No immediate output; ls result written to file.
+
+Test 6 - Pipe Command
+Input: ls | sort
+Expected Output: Sorted listing of current directory contents.
+
+Test 7 - Command Not Found
+Input: unknowncommand
+Expected Output: Error message that indicates that command not found. (execvp failed: No such file or directory)
+
+Test 8 - Wildcard Expansion
+Input: ls *.txt
+Expected Output: List out all .txt files in the current directory.
+
+Test 9 - Handling exit Command
+Input: exit
+Expected Output: Shell exits.
+
+##Testing Batch Mode:
+
+Test 10 - Batch File Execution
+Input: ./mysh file_name.txt
+Expected Output: Appropriate output for each command in file.
